@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="queenb_pink">#F9C0BF</color>
     <color name="queenb_text_gray">#606060</color>
+    <color name="queenb_dark_gray">#FF434343</color>
+    <color name="queenb_light_pink">#FFFEF1F1</color>
+
 </resources>
