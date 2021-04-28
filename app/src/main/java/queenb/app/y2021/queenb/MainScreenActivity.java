@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.LinkedList;
 import java.util.Objects;
 
 import queenb.app.y2021.queenb.ui.main.GalleryFragment;
