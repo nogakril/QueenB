@@ -1,21 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.GalleryFragment">
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.main.MeetingsFragment">
 
-    <RelativeLayout
+
+    <ImageView
+        android:layout_width="201dp"
+        android:layout_height="185dp"
+        android:layout_gravity=""
+        android:src="@drawable/queenb_sqr"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+        android:layout_width="264dp"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitEnd"
+        android:src="@drawable/queenb_sqr1"
+        tools:ignore="MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="75dp"
+        android:background="@color/queenb_dark_gray"
+        tools:ignore="MissingConstraints">
+
         <TextView
+            android:id="@+id/meetingTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Gallery"
-            android:textColor="@color/black"
-            android:textSize="24sp"/>
+            android:background="@color/queenb_dark_gray"
+            android:ellipsize="none"
+            android:fontFamily="@font/asul"
+            android:gravity="right"
+            android:text="VOL.1: Welcome to QueenB"
+            android:textColor="@color/queenb_light_pink"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/are_you_coming"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/asul"
+        android:text="Coming?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="131dp" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="141dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="52dp"
+        android:text="YES!"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/yesButton2"
+        android:layout_width="141dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="52dp"
+        android:text="YES!"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="180dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

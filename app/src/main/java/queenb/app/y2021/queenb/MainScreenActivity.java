@@ -1,6 +1,8 @@
 package queenb.app.y2021.queenb;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -16,11 +18,22 @@ import queenb.app.y2021.queenb.ui.main.ViewPagerAdapter;
 
 public class MainScreenActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setUpTabs();
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (AddImage.isBackFromAddImage){
+            ViewPager viewPager = findViewById(R.id.viewPager);
+            viewPager.setCurrentItem(2);
+        }
     }
 
     private void setUpTabs() {
