@@ -19,4 +19,6 @@ public class MeetingsFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_meetings, container, false);
     }
+
+
 }
