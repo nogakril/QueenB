@@ -15,6 +15,7 @@
         android:layout_height="185dp"
         android:layout_gravity=""
         android:src="@drawable/queenb_sqr"
+        android:visibility="visible"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-8dp"
         tools:layout_editor_absoluteY="65dp" />
@@ -26,6 +27,7 @@
         android:layout_gravity="bottom"
         android:scaleType="fitEnd"
         android:src="@drawable/queenb_sqr1"
+        android:visibility="visible"
         tools:ignore="MissingConstraints,RtlHardcoded"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="511dp" />
@@ -34,6 +36,7 @@
         android:layout_width="411dp"
         android:layout_height="93dp"
         android:background="@color/queenb_dark_gray"
+        android:visibility="visible"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -64,6 +67,7 @@
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +81,7 @@
         android:layout_marginStart="52dp"
         android:fontFamily="@font/asul"
         android:text="no..."
+        android:visibility="visible"
         app:backgroundTint="@color/queenb_pink"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -88,6 +93,7 @@
         android:layout_height="69dp"
         android:fontFamily="@font/asul"
         android:text="yes!"
+        android:visibility="visible"
         app:backgroundTint="@color/queenb_pink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.415"
@@ -113,7 +119,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="visible">
 
                 <TextView
                     android:id="@+id/msg_content"
@@ -123,6 +130,7 @@
                     android:text="This meeting will be in Campus.\n\nDon't need to bring computers.\n\nDo not forget to fill out a health statement before entering campus."
                     android:textAlignment="center"
                     android:textColor="@color/queenb_dark_gray"
+                    android:visibility="visible"
                     tools:layout_editor_absoluteX="10dp"
                     tools:layout_editor_absoluteY="16dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -137,6 +145,7 @@
         android:text="Topics of the week:"
         android:textColor="@color/black"
         android:textSize="24sp"
+        android:visibility="visible"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="299dp" />
@@ -149,6 +158,7 @@
         android:text="Messages:"
         android:textColor="@color/black"
         android:textSize="24sp"
+        android:visibility="visible"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="456dp" />
@@ -162,6 +172,7 @@
         android:text="- You will get to know each other\n- You will get to know QueenB's program\n- Basic concepts in the code world"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/msgs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

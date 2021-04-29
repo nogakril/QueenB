@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/queenb_pink">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:srcCompat="@drawable/queenb_pink_circle"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:srcCompat="@drawable/queenb_pink_circle1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="591dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="202dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+            <Button
+                android:id="@+id/meet1"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.1: Welcome to QueenB"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <Button
+                android:id="@+id/meet2"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.2: Types"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.513"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <Button
+                android:id="@+id/meet3"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.3: input &amp; output"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <Button
+                android:id="@+id/meet4"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.4: if statements"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <Button
+                android:id="@+id/meet5"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.5: be brave"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="354dp" />
+
+            <Button
+                android:id="@+id/meet6"
+                android:layout_width="374dp"
+                android:layout_height="76dp"
+                android:fontFamily="@font/antic"
+                android:text="NO.6: and-or statements"
+                android:textColor="@color/queenb_light_pink"
+                android:textSize="18sp"
+                app:backgroundTint="@color/queenb_text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="430dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
